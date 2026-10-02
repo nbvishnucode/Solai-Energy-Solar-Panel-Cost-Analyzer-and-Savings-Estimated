@@ -118,9 +118,7 @@ footer{background:#05150f;color:#b8cdc4;padding:42px 0 25px}
 footer a{color:#dff1e8;text-decoration:none}
 .copyright{margin-top:30px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .made{color:#e8f6ef}
-.floating{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;gap:9px}
-.float{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:23px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
-.wa{background:#20c56a;color:white}.call{background:white;color:var(--green)}
+
 details{border-bottom:1px solid var(--line);padding:18px 0}
 summary{font-weight:800;cursor:pointer}
 details p{color:var(--muted);margin-bottom:0}
@@ -169,7 +167,6 @@ details p{color:var(--muted);margin-bottom:0}
       <p>Smart rooftop solar solutions designed for Indian electricity bills — from site assessment and system sizing to installation support and government-scheme guidance.</p>
       <div class="hero-actions">
         <a class="btn btn-light" href="#lead">Check My Solar Savings →</a>
-        <a class="btn" style="color:white;border:1px solid rgba(255,255,255,.25)" href="https://wa.me/919121453159?text=Hi%20Solva%20Energy%2C%20I%20want%20a%20rooftop%20solar%20quote." target="_blank" rel="noopener">WhatsApp Us</a>
       </div>
       <div class="hero-meta">
         <div><b>₹78K*</b>Max central CFA for eligible residential systems</div>
@@ -303,10 +300,7 @@ details p{color:var(--muted);margin-bottom:0}
 </div>
 </footer>
 
-<div class="floating">
-  <a class="float call" href="tel:+919121453159" aria-label="Call Solva Energy">☎</a>
-  <a class="float wa" href="https://wa.me/919121453159?text=Hi%20Solva%20Energy%2C%20I%20want%20a%20solar%20quote." target="_blank" rel="noopener" aria-label="WhatsApp Solva Energy">◉</a>
-</div>
+
 
 <script>
 const CONFIG = {
@@ -351,7 +345,7 @@ document.getElementById("leadForm").addEventListener("submit", async (e)=>{
     status.textContent="✓ Enquiry sent. Solva Energy will contact you soon.";
     form.reset();
   }catch(err){
-    status.textContent="The enquiry could not be sent automatically. Please use the WhatsApp or phone buttons.";
+    status.textContent="The enquiry could not be sent automatically. Please try again or contact Solva Energy directly.";
   }
 });
 </script>
