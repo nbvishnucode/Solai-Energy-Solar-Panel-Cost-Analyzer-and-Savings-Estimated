@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nbvishnucode.github.io/solva-energy/sitemap.xml
