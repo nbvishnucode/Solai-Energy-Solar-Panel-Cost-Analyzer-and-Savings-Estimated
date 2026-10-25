@@ -347,14 +347,15 @@ document.getElementById("leadForm").addEventListener("submit", async (e)=>{
       body:JSON.stringify(data)
     });
     
-// Google Ads conversion tracking
-if (typeof gtag === 'function') {
+<!-- Event snippet for Solai form conversion page -->
+<script>
   gtag('event', 'conversion', {
-    'send_to': 'AW-947610232/hQSzCM6B76gdEPjE7cMD',
-    'value': 1.0,
-    'currency': 'INR'
+      'send_to': 'AW-947610232/hQSzCM6B76gdEPjE7cMD',
+      'value': 1.0,
+      'currency': 'INR'
   });
-}
+</script>
+  
     status.textContent="✓ Enquiry sent. Solai Solar Panel Cost Analyzer will contact you soon.";
     form.reset();
   }catch(err){
