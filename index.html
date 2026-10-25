@@ -346,6 +346,7 @@ document.getElementById("leadForm").addEventListener("submit", async (e)=>{
       headers:{"Content-Type":"text/plain;charset=utf-8"},
       body:JSON.stringify(data)
     });
+    
 // Google Ads conversion tracking
 if (typeof gtag === 'function') {
   gtag('event', 'conversion', {
